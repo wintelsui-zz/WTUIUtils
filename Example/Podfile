@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WTUIUtils_Example' do
+  pod 'WTUIUtils', :path => '../'
+
+  target 'WTUIUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
