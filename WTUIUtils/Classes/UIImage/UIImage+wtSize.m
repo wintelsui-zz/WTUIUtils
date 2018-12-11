@@ -42,7 +42,7 @@
     return newImage;
 }
 
-- (UIImage *)scaleToSize:(CGSize)size {
+- (UIImage *)wt_scaleToSize:(CGSize)size {
         UIGraphicsBeginImageContext(size);
         [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
         UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -50,7 +50,7 @@
         return scaledImage;
 }
 
-- (CVPixelBufferRef)pixelBufferRef {
+- (CVPixelBufferRef)wt_pixelBufferRef {
         CGImageRef imageRef = self.CGImage;
         NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
                                                          [NSNumber numberWithBool:YES], kCVPixelBufferCGImageCompatibilityKey,
