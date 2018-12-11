@@ -11,4 +11,8 @@
 
 - (UIImage *)wt_cutImageInRect:(CGRect)rect;
 
+- (UIImage *)wt_scaleToSize:(CGSize)size;
+
+- (CVPixelBufferRef)wt_pixelBufferRef;
+
 @end
