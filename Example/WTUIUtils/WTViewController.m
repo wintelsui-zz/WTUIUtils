@@ -56,6 +56,10 @@
                 [self.view addSubview:imageViewN];
             }
         });
+        
+        UIImage *imageScale = [imageO wt_scaleToSize:CGSizeMake(20, 20)];
+        NSLog(@"imageScale:%@",imageScale);
+        
     }
     
     UIImage *imageCircle = [UIImage wt_imageCircleFromDia:100 fillColor:[UIColor colorWithRed:0.97 green:0.54 blue:0.88 alpha:1.00]  strokeWidth:5 strokeColor:[UIColor colorWithRed:0.29 green:0.95 blue:0.63 alpha:1.00]];

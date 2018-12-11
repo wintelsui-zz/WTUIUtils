@@ -146,15 +146,23 @@
                                shadowOffset:(CGSize)shadowOffset
                            shadowBlurRadius:(CGFloat)shadowBlurRadius{
     return [[self class] wt_imageSquareWithColor:color
-                                    lineWidth:lineWidth lineColor:lineColor size:size rounded:YES cornerRadius:radius shadowColor:shadowColor shadowOffset:shadowOffset shadowBlurRadius:shadowBlurRadius];
+                                       lineWidth:lineWidth
+                                       lineColor:lineColor
+                                            size:size
+                                         rounded:YES
+                                    cornerRadius:radius
+                                     shadowColor:shadowColor
+                                    shadowOffset:shadowOffset
+                                shadowBlurRadius:shadowBlurRadius];
     
 }
 
 + (UIImage *)wt_imageWithColor:(UIColor *)fullColor{
-    return [UIImage wt_imageWithColor:fullColor withFrame:CGRectMake(0, 0, 1, 1)];
+    return [UIImage wt_imageWithColor:fullColor withSize:CGSizeMake(1, 1)];
 }
 
-+ (UIImage *)wt_imageWithColor:(UIColor *)fullColor withFrame:(CGRect)frame{
++ (UIImage *)wt_imageWithColor:(UIColor *)fullColor withSize:(CGSize)size{
+    CGRect frame = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContext(frame.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [fullColor CGColor]);
@@ -271,3 +279,4 @@
 }
 
 @end
+

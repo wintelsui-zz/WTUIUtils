@@ -46,28 +46,28 @@ CGFloat wt_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
     
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
     switch ([colorString length]) {
-        case 3: // #RGB
+            case 3: // #RGB
             alpha = 1.0f;
             red   = wt_colorComponentFrom(colorString, 0, 1);
             green = wt_colorComponentFrom(colorString, 1, 1);
             blue  = wt_colorComponentFrom(colorString, 2, 1);
             break;
             
-        case 4: // #ARGB
+            case 4: // #ARGB
             alpha = wt_colorComponentFrom(colorString, 0, 1);
             red   = wt_colorComponentFrom(colorString, 1, 1);
             green = wt_colorComponentFrom(colorString, 2, 1);
             blue  = wt_colorComponentFrom(colorString, 3, 1);
             break;
             
-        case 6: // #RRGGBB
+            case 6: // #RRGGBB
             alpha = 1.0f;
             red   = wt_colorComponentFrom(colorString, 0, 2);
             green = wt_colorComponentFrom(colorString, 2, 2);
             blue  = wt_colorComponentFrom(colorString, 4, 2);
             break;
             
-        case 8: // #AARRGGBB
+            case 8: // #AARRGGBB
             alpha = wt_colorComponentFrom(colorString, 0, 2);
             red   = wt_colorComponentFrom(colorString, 2, 2);
             green = wt_colorComponentFrom(colorString, 4, 2);
@@ -143,3 +143,4 @@ CGFloat wt_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
 
 
 @end
+
