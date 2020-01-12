@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-//UIImage
+// UIImage
 #import "UIImage+wtColorDraw.h"
 #import "UIImage+wtSize.h"
 
-//UIColor
+// UIColor
 #import "UIColor+wtExtend.h"
 
+// UIButton
+#import "WTHorizontalButton.h"
 
 @interface WTUIUtils: NSObject
 

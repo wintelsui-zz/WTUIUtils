@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		05F411D1AC419D020A225D2D /* Pods-WTUIUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTUIUtils_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTUIUtils_Tests/Pods-WTUIUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0735E496E415E562D2247402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0735E496E415E562D2247402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2F5E6778A1F61C11FC41B844 /* Pods-WTUIUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTUIUtils_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		478059FE140058F68F217192 /* WTUIUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WTUIUtils.podspec; path = ../WTUIUtils.podspec; sourceTree = "<group>"; };
+		478059FE140058F68F217192 /* WTUIUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WTUIUtils.podspec; path = ../WTUIUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F737DCCF7CFA195DEDFAD34 /* Pods-WTUIUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTUIUtils_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTUIUtils_Tests/Pods-WTUIUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WTUIUtils_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTUIUtils_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		A1A097C64569B976DA5E6E87 /* Pods-WTUIUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTUIUtils_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B3598D106F0AF2461DE60799 /* Pods_WTUIUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTUIUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2D6467170AA01646FB0211 /* Pods_WTUIUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTUIUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0EE5F6E6C84BCFA7B08166E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D0EE5F6E6C84BCFA7B08166E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -300,7 +301,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/WTUIUtils/WTUIUtils.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -309,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTUIUtils_Example/Pods-WTUIUtils_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		952270EBB0BAFEFFECD76CD4 /* [CP] Check Pods Manifest.lock */ = {

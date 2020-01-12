@@ -1,5 +1,5 @@
 PODS:
-  - WTUIUtils (0.1.1)
+  - WTUIUtils (0.1.2)
 
 DEPENDENCIES:
   - WTUIUtils (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WTUIUtils: 3a62e6bd91e89cd6fbddecb4f0451768a0229caa
+  WTUIUtils: 5374d1d13d91abf8337ecc1cc70088302c7e3762
 
 PODFILE CHECKSUM: 5f9ef9ee8d8596f8294f3528093349ab049dd8b7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
