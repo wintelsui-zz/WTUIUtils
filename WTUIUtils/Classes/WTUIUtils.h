@@ -18,6 +18,9 @@
 // UIButton
 #import "WTHorizontalButton.h"
 
+// UIScrollView + UIImageView
+#import "WTPhotoView.h"
+
 @interface WTUIUtils: NSObject
 
 @end
